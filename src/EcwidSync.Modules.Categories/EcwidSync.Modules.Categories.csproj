@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+  </ItemGroup>
+  <ItemGroup>
+	  <ProjectReference Include="..\EcwidSync.Domain\EcwidSync.Domain.csproj" />
+	  <ProjectReference Include="..\EcwidSync.Infrastructure\EcwidSync.Infrastructure.csproj" />
+	  <ProjectReference Include="..\EcwidSync.Persistence\EcwidSync.Persistence.csproj" />
+	  <ProjectReference Include="..\EcwidSync.Shared\EcwidSync.Shared.csproj" />
+  </ItemGroup>
+</Project>
